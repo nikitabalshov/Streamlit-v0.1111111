@@ -1,9 +1,10 @@
 import streamlit as st
+from Pages import Home, Project1, Project2, Project3
 from streamlit_navigation_bar import st_navbar as navbar
 
 st.set_page_config(initial_sidebar_state='collapsed')
 
-pages = ["Home","Project1","Project2","Project3"]
+pages = ["Home", "Project1", "Project2", "Project3"]
 
 styles ={
     "nav":{
@@ -35,7 +36,7 @@ elif page == "Project1":
     Project1.Project1().app()
 elif page == "Project2":
     Project2.Project2().app()
-elif page == "Project1":
+elif page == "Project3":
     Project3.Project3().app()
 else:
     Home.Home().app()
