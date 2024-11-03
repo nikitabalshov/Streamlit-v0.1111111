@@ -1,12 +1,12 @@
 import streamlit as st
 from Pages import Home, Project1, Project2, Project3
-from streamlit_navigation_bar import st_navbar as navbar
+from streamlit_navigation_bar import st_navbar
 
 st.set_page_config(initial_sidebar_state='collapsed')
 
 pages = ["Home", "Project1", "Project2", "Project3"]
 
-styles ={
+styles = {
     "nav":{
         "background-color":"rgb(123,209,146)",
     },
@@ -23,12 +23,12 @@ styles ={
         "background-color":"rgba(105,114,255 ,0.25)",
     },
     "hover":{
-        "background-color":"rgba(255,255,255,0.35)"
+        "background-color":"rgba(255,255,255,0.35)",
     }
 
 }
 
-page = navbar(pages, styles= styles)
+page = st_navbar(pages, styles=styles)
 
 if page == "Home":
     Home.Home().app()
