@@ -20,7 +20,7 @@ styles ={
     },
     "active":{
         "background-color":"rgba(105,114,255 ,0.25)",
-    }
+    },
     "hover":{
         "background-color":"rgba(255,255,255,0.35)"
     }
